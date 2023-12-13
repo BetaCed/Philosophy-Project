@@ -1,0 +1,253 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #504444;
+    color: #000;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/old-paper-texture-1920-x-1080-background-zqbik4dxiykk23h1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%   ;
+}
+
+nav{
+    position: fixed;
+    background: #f4f1f1;
+    
+    width: 90vw;
+    display: flex;
+    padding: 2% 6% 2% 6%;
+    
+    z-index: 2;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    height: 70px;
+    margin-left: -50px;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none    ;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.45s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 25%;
+    font-size: 20px;
+    text-align: center;
+}
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*------about-------*/
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{    
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+list-style: none;
+margin: 10px 0;
+font-size: 13px;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 25px;
+}
+.tab-contents{
+    display: none;
+    text-align: justify;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*------service-------*/
+#service{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color:#fff;
+    text-align: justify;
+}
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #3f3636;
+    transform: translateY(-10px);
+}
+/*fill*/
+#fill-in{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    color: #fff;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #504444);
+    border-radius: 10px ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/*seemore*/
+.see-more{
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+}
+#logic img{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+#logic{
+    color: #fff;
+    font-size: 30px;
+}
+#logic ul li{
+    list-style: none;
+margin: 10px 0;
+font-size: 13px;
+}
+#logic ul li span{
+    color: #ff004f;
+    font-size: 25px;    
+}

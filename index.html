@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Philosophy in life</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.min.js"></script>
+<script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.setup.js"></script>
+
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div class="fl_left">
+      <h1 class="topnavTitle"><a href="index.html">Philosophy in Life</a></h1>
+      <p>Project in Philosophy</p>
+    </div>
+    <div class="fl_right"><a href="#"><img src="images/demo/philosophy.jpg" alt="" /></a></div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topbar">
+    <div id="topnav">
+      <ul>
+        <li class="active"><a href="index.html">Thematic Types</a></li>
+        <li><a href="pages/full-width.html">Different Philosophers</a></li>
+        <li><a href="pages/style-demo.html">About Us</a></li>
+        <li><a href="#">Other Projects</a>
+          <ul>
+            <li><a href="yhulophilo/Untitled-1.html">Yhulosophy</a></li>
+            <li><a href="epistemology/epistemology.html">bowenlosophy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="search">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- #################################################  ###################################################### -->
+<div class="wrapper col3">
+  <div id="waterwheelCarousel" >
+    <img src="images/carousel/metaphysics.jpg" alt="Clickable Image" id="clickableImage" width="350" height="200" />
+    <img src="images/carousel/epistemology.png" alt="Clickable Image" id="clickableImage2" width="350" height="200" />
+    <img src="images/carousel/ethics.png" alt="Clickable Image" id="clickableImage3" width="350" height="200" />
+    <img src="images/carousel/logic.png" alt="Clickable Image" id="clickableImage4" width="350" height="200" />
+    <img src="images/carousel/aesthetics.jpg" alt="Clickable Image" id="clickableImage5" width="350" height="200" />
+
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+
+<div class="wrapper col4">
+  <div id="featured_intro">
+    <div class="fl_left">
+      <h2 id="heading1">Metaphysics</h2>
+    </div>
+    <div class="fl_right">
+      <h2 id="heading2" >What is metaphysics?</h2>
+      <p id="paragraph" >is the branch of philosophy that deals with the first principles of things, such as being, knowing, substance, cause, identity, time, and space, among other abstract notions.</a>.</p>
+    </div>
+
+    <br class="clear" />
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+
+<script>
+  var heading1Element = document.getElementById('heading1');
+  var heading2Element = document.getElementById('heading2');
+  var paragraphElement = document.getElementById('paragraph');
+  var imageElement = document.getElementById('clickableImage');
+  var image2Element = document.getElementById('clickableImage2');
+  var image3Element = document.getElementById('clickableImage3');
+  var image4Element = document.getElementById('clickableImage4');
+  var image5Element = document.getElementById('clickableImage5');
+  var image6Element = document.getElementById('clickableImage6');
+  var image7Element = document.getElementById('clickableImage7');
+  var image8Element = document.getElementById('clickableImage8');
+  var image9Element = document.getElementById('clickableImage9');
+  var image10Element = document.getElementById('clickableImage10');
+
+
+
+  // Add a click event listener to the image
+  imageElement.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Metaphysics';
+    heading2Element.innerText = 'What is metaphysics?';
+    paragraphElement.innerText = 'is the branch of philosophy that deals with the first principles of things, such as being, knowing, substance, cause, identity, time, and space, among other abstract notions.';
+  });
+
+  image2Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Epistemology';
+    heading2Element.innerText = 'What is Epistemology';
+    paragraphElement.innerText = 'is the study of the nature of knowledge. It explores the understanding of concepts, their nature, construction, sense validity, logical reasoning, thoughts, ideas, memories, emotions, and all mental aspects.';
+  });
+
+  image3Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Ethics';
+    heading2Element.innerText = 'What is Ethics?';
+    paragraphElement.innerText = 'is a branch of philosophy that examines the rational justification for our moral judgements. It studies what is morally right or wrong, just or unjust. It answers the question What do I do? ';
+  });
+
+  image4Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Logic';
+    heading2Element.innerText = 'What is Logic?';
+    paragraphElement.innerText = 'is the philosophical branch concerned with examining rules or principles that govern reasoning.';
+  });
+
+  image5Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Aesthetics';
+    heading2Element.innerText = 'What is aesthetics?';
+    paragraphElement.innerText = 'Aesthetics delves into the evaluation of art, exploring subjective judgments and pondering whether art is entirely subjective or possesses specific characteristics and goals.';
+  });
+
+  image6Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Social and Political Philosophy';
+    heading2Element.innerText = 'What is Social and Political Philosophy';
+    paragraphElement.innerText = 'delves into questions of justice, political authority, and individual rights within societal contexts, providing normative guidance for how societies should be organized. Influential thinkers like John Locke and John Rawls have shaped this fields discourse on the fundamental principles underlying social institutions';
+  });
+
+  image7Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'PHILOSOPHY OF SCIENCE';
+    heading2Element.innerText = 'Yhulo';
+    paragraphElement.innerText = 'Nathan';
+  });
+
+  image8Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Philosophy of the Mind';
+    heading2Element.innerText = 'Yhulo';
+    paragraphElement.innerText = 'Nathan';
+  });
+
+  image9Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Philosophy of Religion';
+    heading2Element.innerText = 'Yhulo';
+    paragraphElement.innerText = 'Nathan';
+  });
+
+  image10Element.addEventListener('click', function() {
+    // Change the content of the heading and paragraph
+    heading1Element.innerText = 'Philosophy of Language';
+    heading2Element.innerText = 'Yhulo';
+    paragraphElement.innerText = 'Nathan';
+  });
+</script>
+
+<!-- ####################################################################################################### -->
+
+
+<div class="wrapper col5">
+  <div id="footer">
+    <div class="footbox twitter">
+      <h2>Examples</h2>
+      <ul>
+        <li><a href="#">Metaphysics</a> What is existence and reality? What is the nature of space and time?</li>
+        <li><a href="#">Epistemology</a>How do we know what we know? Are the things that we know true?</li>
+        <li><a href="#">Ethics</a> What is the right course of action in the face of problems or dilemmas?</li>
+        <li><a href="#">Logic</a> What is truth? How can I say that my statements are true?</li>
+        <li><a href="#">Aesthetic</a> What is beauty?  What is our basis of judgment to say that it is beautiful?</li>
+      </ul>
+    </div>
+    <div class="footbox posts">
+      <h2>Additional info</h2>
+      <ul>
+        <li><a href="#"> Epistemology </a> - The argument between rationalism and empiricism, or whether knowledge may be obtained a priori ( prior to) or posteriori ( posterior to), is a common topic in modern epistemology.</li>
+        <li>There are two types of knowing. Empiricism is the knowledge gained primarily through observation and experience. Meanwhile, moral rationalism, or ethical rationalism, is the view according to moral truths are knowable a priori by reason alone.      </li>
+      </ul>
+    </div>
+    <div class="footbox posts">
+      <h2>Additional info</h2>
+      <ul>
+        <li><a href="#">There are 2 forms of forming knowledge. </a>
+          Propositional Knowledge - knowledge that some statements are either true or false.
+          Propositional Knowledge - is derived from a variety of perspectives, this includes philosophy, history, literature, and science
+          </li> 
+        <li><a href="#">Ethics</a> - Meta-ethics focuses on understanding the nature and meaning of moral judgments, actions, and states of being, rather than determining if lying is always wrong, and aims to clarify what is right or wrong.
+        </li>
+      </ul>
+    </div>
+    <div class="footbox last">
+      <h2>Additional info</h2>
+      <ul>
+        <li><a href="#">Social and Political Philosophy </a>
+          delves into questions of justice, political authority, and individual rights within societal contexts, providing normative guidance for how societies should be organized. Influential thinkers like John Locke and John Rawls have shaped this field's discourse on the fundamental principles underlying social institutions.
+          </li> 
+        <li><a href="#">Philosophy of science</a> - is an inquiry into the nature, methods, and assumptions underlying scientific knowledge. It scrutinizes the fundamental principles guiding scientific investigation and aims to understand the nature of scientific reasoning and discovery.
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ICT3 12-1</a></p>
+    <br class="clear" />
+  </div>
+</div>
+
+
+
+</body>
+</html>
